@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "types": [
+        "node",
+        "mocha",
+        "chai"
+      ]
+    },
+    "include": [
+      "./*.ts",
+      "./src/**/*.ts",
+      "./test/**/*.ts"
+, "notes.txt"    ],
+    "exclude": [
+      "./node_modules",
+      "./test-resources"
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+  "name": "electron-tests",
+  "version": "1.0.0",
+  "description": "e2e testing for electron apps",
+  "keywords": [
+    "e2e",
+    "electron"
+  ],
+  "license": "Apache-2.0",
+  "author": "dtopuzov",
+  "scripts": {
+    "lint": "npx eslint .",
+    "test": ""
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "selenium-webdriver": "^4.0.0-beta.3",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.3.2",
+    "vscode-extension-tester": "^4.0.3"
+  }
+}

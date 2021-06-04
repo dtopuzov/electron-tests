@@ -1,0 +1,22 @@
+bin\code --install-extension "c:\Git\electron-tests\vsix\kendovscode.vsix" --extensions-dir "c:\Git\electron-tests\vsix"
+
+
+c:\Git\electron-tests\test-resources\VSCode-win32-x64-archive>bin\code --install-extension "c:\Git\electron-tests\vsix\kendovscode.vsix" --extensions-dir "c:\Git\electron-tests\vsix"
+Installing extensions...
+(node:11844) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+Extension 'kendovscode.vsix' was successfully installed.
+
+c:\Git\electron-tests\test-resources\VSCode-win32-x64-archive>bin\code --extensions-dir "c:\Git\electron-tests\vsix"
+
+c:\Git\electron-tests\test-resources\VSCode-win32-x64-archive>bin\code --extensions-dir "c:\Git\electron-tests\vsix"
+
+c:\Git\electron-tests\test-resources\VSCode-win32-x64-archive>
+
+
+
+
+
+
+
+
