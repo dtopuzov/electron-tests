@@ -1,3 +1,7 @@
+# Reports
+allure-results
+junit-results
+
 # Logs
 logs
 *.log
