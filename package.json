@@ -1,0 +1,39 @@
+{
+  "name": "electron-tests",
+  "version": "1.0.0",
+  "description": "e2e testing for electron apps",
+  "keywords": [
+    "e2e",
+    "electron"
+  ],
+  "license": "Apache-2.0",
+  "author": "dtopuzov",
+  "scripts": {
+    "lint": "npx eslint src/**/*.ts test/**/*.ts",
+    "prepare:stable": "npx extest get-vscode -s temp/code -t stable && npx extest get-chromedriver -s temp/code -t stable",
+    "prepare:insider": "npx extest get-vscode -s temp/code -t insider && npx extest get-chromedriver -s temp/code -t insider",
+    "install:kendo:stable": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/kendovscode.vsix -t stable",
+    "install:kendo:insider": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/kendovscode.vsix -t insider",
+    "install:core:stable": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/corevscode.vsix -t stable",
+    "install:core:insider": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/corevscode.vsix -t insider",
+    "install:blazor:stable": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/blazorvscode.vsix -t stable",
+    "install:blazor:insider": "npx extest install-vsix -s temp/code -s temp/vsix -f vsix/blazorvscode.vsix -t insider",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.1",
+    "@types/selenium-webdriver": "^4.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.28.0",
+    "jest": "^27.0.4",
+    "jest-junit": "^12.1.0",
+    "mocha": "^8.4.0",
+    "selenium-webdriver": "^4.0.0-beta.3",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2",
+    "vscode-extension-tester": "^4.0.3"
+  }
+}
